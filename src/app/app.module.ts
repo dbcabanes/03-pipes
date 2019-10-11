@@ -8,9 +8,10 @@ import { CapitalizadoPipe } from "./pipes/capitalizado.pipe";
 registerLocaleData(localeES);
 
 import { AppComponent } from "./app.component";
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 @NgModule({
-  declarations: [AppComponent, CapitalizadoPipe],
+  declarations: [AppComponent, CapitalizadoPipe, DomseguroPipe],
   imports: [BrowserModule],
   providers: [{ provide: LOCALE_ID, useValue: "es" }],
   bootstrap: [AppComponent]
